@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    box-sizing: border-box;
+    color: blue;
+}
+
+.cabecalho__corpo{
+    background-color: rgb(85, 13, 168);
+    padding: 2px;
+    margin-bottom: 2%;
+}
+.cabecalho{
+    padding: 2% 0% 0% 10%;
+    text-decoration: none;
+    gap: 80px;
+    color: blue;
+}
+
+.conteudo{
+    padding: 0% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pagina{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.titulo{
+    font-family: sans-serif;
+}
+.texto{
+    font-family: sans-serif;
+    .html:hover{
+        background-color: orangered;
+        color: white;
+    }
+    .css:hover{
+        background-color: rgb(22, 105, 173);
+        color: white;
+    }
+    .java:hover{
+        background-color: red;
+        color:rgb(52, 52, 156);
+    }
+    .javascript:hover{
+        background-color: orangered;
+        color:rgb(52, 52, 156);
+    }
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.link{
+    display:flex;
+    justify-content: center;
+    border: 2px solid blue;
+    border-radius: 8px;
+    width: 300px;
+    padding: 14.5px 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.link:hover{
+    background-color: rgb(60, 60, 60);
+}
+
+.copyright{
+    margin-top:15%;
+    color: rgb(0, 106, 255);
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
