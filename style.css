@@ -1,90 +1,97 @@
+
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+h1{
+    font-size: 1.5em;
+    font-family: sans-serif;
+    margin-top: 3%;
+}
+h2{
+    font-size: 1.0em;
+    font-family: sans-serif;
+}
+div{
+    background-color: black;
+    width: 320px;
+    height: 200px;
+    margin-top: 5%;
+    border: solid gray;
+    border-radius: 10px;
+    color: white;
+}
+div a{
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+div h1{
+    font-size: 20px;
+    padding: 1%;
+}
+div h2{
+    font-size: 13px;
+    padding: 1%;
+}
+div:hover{
+    transform: scale(1.10);
+}
+/*////////////////////////////////////////////////////////////////////////////*/
+#topo{
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.681);
+}
+#cabecalho{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 body{
-    background-color: black;
-    box-sizing: border-box;
-    color: blue;
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
-.cabecalho__corpo{
-    background-color: rgb(85, 13, 168);
-    padding: 2px;
-    margin-bottom: 2%;
-}
-.cabecalho{
-    padding: 2% 0% 0% 10%;
-    text-decoration: none;
-    gap: 80px;
-    color: blue;
-}
-
-.conteudo{
-    padding: 0% 20%;
+#corpo-pagina{
+    width: 100%;
+    height: 80%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.pagina{
-    display:flex;
-    flex-direction: column;
-    gap: 30px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.titulo{
-    font-family: sans-serif;
-}
-.texto{
-    font-family: sans-serif;
-    .html:hover{
-        background-color: orangered;
-        color: white;
-    }
-    .css:hover{
-        background-color: rgb(22, 105, 173);
-        color: white;
-    }
-    .java:hover{
-        background-color: red;
-        color:rgb(52, 52, 156);
-    }
-    .javascript:hover{
-        background-color: orangered;
-        color:rgb(52, 52, 156);
-    }
-}
-
-.botoes{
+#esquerda{
+    width: 60%;
+    height: 70%;
     display: flex;
     flex-direction: column;
+    justify-content: left;
     align-items: center;
-    gap: 32px;
 }
-.link{
-    display:flex;
+#esquerda aside{
+    padding: 2%;
+}
+#direita{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#direita aside{
+    padding: 3%;
+}
+
+#rodape{
+    width: 100%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    border: 2px solid blue;
-    border-radius: 8px;
-    width: 300px;
-    padding: 14.5px 0;
-    font-size: 24px;
-    font-weight: 600;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-.link:hover{
-    background-color: rgb(60, 60, 60);
-}
-
-.copyright{
-    margin-top:15%;
-    color: rgb(0, 106, 255);
-    padding: 24px;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
 }
