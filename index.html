@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 </head>
 <body>
     <header id="topo">
@@ -19,8 +20,7 @@
     </header>
     <main id="corpo-pagina">
         <section id="esquerda">
-            <aside>
-            <img src="img/lucas.jpg" width="220px" alt="puts...">
+            <img src="img/lucas.jpg" id="luc" alt="img.png">
             <h1>
                 Lucas Silveira Rios
             </h1>
@@ -34,40 +34,53 @@
             <div>
                 <a href="https://my-landing-page-oo7y9r30y-nobbisnagas-projects.vercel.app/">
                 <h1>
-                    Landing Page Hacker Space
+                    LP - Hacker Space
                 </h1>
-                <img src="img/HackerSpace.png" width="190px" alt="img.png">
-                <h2>
-                    Landing Page voltada aos eventos brasileiros de Honkai Star Rail e um pouco do próprio jogo!
-                </h2>
+                <img src="img/HackerSpace.png" alt="img.png">
                 </a>
             </div>
-            </aside>
         </section>
         <section id="direita">
             <aside>
-            <h2>
-                Outros projetos
-            </h2>
+                <h1>
+                    Outros projetos
+                </h1>
+                <h2>
+                    para vê-los sugiro tentar jogar as janelas para cima, ou quem sabe para baixo?
+                </h2>
+
+            <swiper-container class="mySwiper" direction="vertical" pagination="true" pagination-clickable="true">
+            
+                <swiper-slide>
+            <div>
+                <a href="https://lp-anime-houseki.vercel.app/">
+                    <h1>
+                        LP - Houseki no Kuni
+                    </h1>
+                    <img src="img/lp-houseki.png" alt="img.png">
+                </a>
+            </div>
+        </swiper-slide>
+
+        <swiper-slide>
             <div>
                 <a href="https://jogo-da-velha-gamma-beige.vercel.app/">
                     <h1>
                         Jogo da velha
                     </h1>
-                    <img src="img/JogoVelha.png" width="200px" alt="img.png">
-                    <h2>
-                        Um adoravél jogo da velha!
-                    </h2>
+                    <img src="img/JogoVelha.png" alt="img.png">
                 </a>
             </div>
-            <div></div>
+        </swiper-slide>
+        </swiper-container>
+
             </aside>
         </section>
-    </main>
     <footer id="rodape">
         <h1>
             @Lucas Rios
         </h1>
     </footer>
+    </main>
 </body>
 </html>
