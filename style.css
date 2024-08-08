@@ -15,6 +15,7 @@ h1{
     margin-top: 3%;
 }
 h2{
+    margin-top: 0;
     font-size: 1.0em;
     font-family: sans-serif;
 }
@@ -22,28 +23,36 @@ div{
     background-color: black;
     width: 320px;
     height: 200px;
-    margin-top: 5%;
     border: solid gray;
     border-radius: 10px;
     color: white;
 }
 div a{
     color: blue;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-div h1{
-    font-size: 20px;
-    padding: 1%;
-}
-div h2{
-    font-size: 13px;
-    padding: 1%;
+    padding: 3%;
 }
 div:hover{
     transform: scale(1.10);
+}
+
+h1{
+    font-size: 1.5rem;
+}
+h2{
+    font-size: 1rem;
+}
+
+img{
+    width: 190px;
+}
+#luc{
+    width: 50%;
 }
 /*////////////////////////////////////////////////////////////////////////////*/
 #topo{
@@ -64,38 +73,51 @@ body{
 }
 
 #corpo-pagina{
-    background: linear-gradient(green, blue);
+    background: linear-gradient(45deg,green, blue);
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 #esquerda{
-    width: 60%;
-    height: 70%;
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
-#esquerda aside{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
+
 #direita{
     width: 40%;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
+#direita aside{
+    width: 100%;
+    height: 100%;
+}
+.mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #rodape{
-    background: linear-gradient(blue 100%, black 10%);
+    background-color: blue;
     width: 100%;
-    height: 10%;
+    height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
